@@ -21,7 +21,6 @@ class EOTGPage extends Component {
         <About />
         <Orgs />
         <Faq />
-        {/* <Footer /> */}
       </>
     );
   }
