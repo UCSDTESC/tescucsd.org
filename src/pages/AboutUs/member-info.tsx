@@ -1,60 +1,68 @@
 export const pvpData: string[][] = [
   [
-    "Melchisedec Lai",
+    "Viet Minh Hieu Nguyen",
     "Co-President",
-    "Nanoengineering",
-    "/member-pictures/Mel-Lai.jpg",
-    "https://www.linkedin.com/in/mel-lai/",
-    "melchisedec@tesc.ucsd.edu"
-  ],
-  [
-    "Chloe Pracharktam",
-    "Co-President",
-    "Chemical Engineering",
-    "/member-pictures/Chloe-Pracharktam.jpg",
+    "Data Science, Applied Mathematics",
+    "/member-pictures/Hieu-Nguyen.jpg",
     "",
-    "chloe@tesc.ucsd.edu"
+    "hieu.nguyen@tescatucsd.org"
   ],
   [
-    "Ashley Choi",
+    "Nicole Fong",
+    "Co-President",
+    "Artificial Intelligence",
+    "/member-pictures/Nicole-Fong.jpg",
+    "",
+    "nicolef@tescatucsd.org"
+  ],
+  [
+    "Aksh Malik",
+    "VP Internal",
+    "Computer Science",
+    "/member-pictures/Aksh-Malik.jpg",
+    "",
+    "akshm@tescatucsd.org"
+  ],
+  [
+    "Eric Aguilar",
+    "VP Events",
+    "Structural Engineering",
+    "/member-pictures/Eric-Aguilar.jpg",
+    "",
+    "e4aguilar@tescatucsd.org"
+  ],
+  [
+    "Woori (Ashley) Choi",
     "VP External",
     "Political Science",
-    "/member-pictures/Ashley-Choi.jpg",
+    "/member-pictures/Woori-(Ashley)-Choi.jpg",
     "",
-    "ashley@tesc.ucsd.edu"
+    "ashley@tescatucsd.org"
   ],
   [
-    "Parth Trivedi",
-    "VP Events",
-    "",
-    "/member-pictures/Parth_Trivedi.png",
-    "",
-    "parth@tesc.ucsd.edu"
-  ],
-  [
-    "Rohan Sachdeva",
-    "Graduate Advisor / Acting VP Internal",
-    "Computer Science",
-    "/member-pictures/Rohan-Sachdeva.jpg",
-    "https://www.linkedin.com/in/rohanvsachdeva/",
-    "rohan@tesc.ucsd.edu"
-  ],
-  [
-    "Anika Agarwal",
-    "VP Internal",
-    "Computer Engineering",
-    "/member-pictures/Anika-Agarwal.jpg",
-    "",
-    "anika_agarwal@tesc.ucsd.edu"
-  ],
-  [
-    "Pearl Wen",
+    "Timothy Bang",
     "VP Finance",
-    "Cognitive Science",
-    "/member-pictures/Pearl-Wen.jpg",
-    "https://www.linkedin.com/in/pearl-wen-3a66a8263",
-    "pearl@tesc.ucsd.edu"
-  ]
+    "",
+    "/member-pictures/Timothy-Bang.jpg",
+    "",
+    "timothyb@tescatucsd.org"
+  ],
+  [
+    "Kevin Nava",
+    "Council Lead",
+    "Mechanical Engineering",
+    "/member-pictures/Kevin-Nava.jpg",
+    "",
+    "kevinnava@tesc.ucsd.edu"
+  ],
+  [
+    "Jade",
+    "Prodev Lead",
+    "Bioengineering",
+    "/member-pictures/Profile_avatar_placeholder_large.png",
+    "",
+    ""
+  ],
 ];
 
 export const committeeLeadsData: string[][] = [
