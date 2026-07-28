@@ -55,9 +55,38 @@ const NavBar = () => {
           <span className="text-offWhite  font-medium">About Us </span>
         </NavLink>
 
-        <NavLink className="h-min mx-4 xl:mx-6 whitespace-nowrap" to="/events">
-          <span className="text-offWhite  font-medium">Events</span>
-        </NavLink>
+        <div className="relative group h-min mx-4 xl:mx-6">
+          <NavLink to="/events" className="whitespace-nowrap">
+            <span className="text-offWhite font-medium">Events</span>
+          </NavLink>
+          <div className="absolute left-1/2 top-full h-3 w-full -translate-x-1/2" />
+          <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 w-[240px] rounded-xl bg-navy/95 border border-white/20 shadow-xl backdrop-blur-sm z-50 overflow-hidden">
+            <a
+              href="https://decafatucsd.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="block px-4 py-3 text-offWhite hover:bg-white/10 text-base font-medium"
+            >
+              DECaF
+            </a>
+            <div className="h-px bg-white/15" />
+            <a
+              href="https://eotgatucsd.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="block px-4 py-3 text-offWhite hover:bg-white/10 text-base font-medium"
+            >
+              EOTG
+            </a>
+            <div className="h-px bg-white/15" />
+            <NavLink
+              to="/events"
+              className="block px-4 py-3 text-offWhite hover:bg-white/10 text-base font-medium"
+            >
+              More
+            </NavLink>
+          </div>
+        </div>
         <a
           className="h-min mx-4 xl:mx-6 whitespace-nowrap"
           href="https://portal.tescatucsd.org"
@@ -109,9 +138,28 @@ const NavBar = () => {
         <NavLink className="h-max py-3 mx-[20px]" to="/about-us">
           <span className="text-offWhite py-2 font-medium">About Us </span>
         </NavLink>
-        <NavLink className="h-max py-3 mx-[20px]" to="/events">
-          <span className="text-offWhite py-2 font-medium">Events</span>
-        </NavLink>
+        <div className="flex flex-col items-end gap-1 py-2 mx-[20px]">
+          <span className="text-offWhite font-medium">Events</span>
+          <a
+            className="h-max py-1"
+            href="https://decafatucsd.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="text-offWhite/90 text-sm font-medium">DECaF</span>
+          </a>
+          <a
+            className="h-max py-1"
+            href="https://eotgatucsd.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="text-offWhite/90 text-sm font-medium">EOTG</span>
+          </a>
+          <NavLink className="h-max py-1" to="/events">
+            <span className="text-offWhite/90 text-sm font-medium">More</span>
+          </NavLink>
+        </div>
         <a
           className="h-max py-3 mx-[20px]"
           href="https://portal.tescatucsd.org"
