@@ -20,7 +20,7 @@ export function Section({ data, title }: Props) {
             transition={{
               duration: 0.4,
               delay: index * 0.1,
-              ease: "easeOut"
+              ease: "easeOut",
             }}
           >
             <MemberCard key={index} member={member as Member} />
@@ -31,13 +31,16 @@ export function Section({ data, title }: Props) {
   );
 }
 
+// [name, role, major, image, linkedIn?, email?, imagePosition?, imageFit?]
 type Member = [
   string,
   string,
   string,
   string,
   (string | null | undefined)?,
-  (string | null | undefined)?
+  (string | null | undefined)?,
+  (string | null | undefined)?,
+  ("cover" | "contain" | null | undefined)?,
 ];
 
 interface MemberCardProps {
@@ -49,6 +52,11 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
   const linkedInURL = member[4] || "https://linkedin.com";
   const emailAddress = member[5] || "https://mail.google.com";
   const imagePreloader = useImagePreloader([member[3]]);
+
+  const isContain = member[7] === "contain";
+  const imagePosition = member[6] || "center";
+  const imagePositionClass = `[object-position:${imagePosition}]`;
+
   return (
     <div className="flex flex-col justify-center items-center">
       {imagePreloader.imagesPreloaded ? (
@@ -56,7 +64,10 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
           {/* Container for image and ellipsis button */}
           <div className="relative w-full max-w-xs bg-white shadow-2xl rounded-[20px]">
             <img
-              className="aspect-[1/1.1] w-full p-4 mx-auto object-cover rounded-[40px] animate-[animate-in_1s]"
+              className={`aspect-[1/1.1] w-full p-4 mx-auto rounded-[40px] animate-[animate-in_1s] ${
+                isContain ? "object-contain" : "object-cover"
+              }`}
+              style={{ objectPosition: imagePosition }}
               src={member[3]}
               alt={member[0]}
             />
