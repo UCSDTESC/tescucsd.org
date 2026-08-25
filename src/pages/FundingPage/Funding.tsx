@@ -5,7 +5,7 @@ const Funding: React.FC = () => {
   const businessTravelFormLink =
     "https://blink.ucsd.edu/_files/travel-tab/Student%20Certification%20for%20Business%2005.pdf";
   const deanFinOpsEmail = "jsoe-dean-finops-g@ucsd.edu";
-  const boardEmail = "board@tesc.ucsd.edu";
+  const boardEmail = "contact@tescatucasd.org";
 
   const eceTravelFundLink =
     "https://www.ece.ucsd.edu/undergraduate/undergraduate-student-life/travel-fund";
@@ -57,7 +57,6 @@ const Funding: React.FC = () => {
           <h2 className="text-[30px] text-[#11426B] font-bold mb-4">
             Application & Review Timeline
           </h2>
-
           <div className="bg-gray-50 p-6 rounded-lg">
             <ol className="list-decimal list-inside text-gray-700 ml-2 space-y-2">
               <li>
@@ -65,8 +64,8 @@ const Funding: React.FC = () => {
                 this page.
               </li>
               <li>
-                <strong>Application Review (2–3 weeks):</strong> TESC reviews applications on a
-                rolling basis. If you do not receive an email within <strong>two weeks</strong>,
+                <strong>Application Review (3-4 weeks):</strong> TESC reviews applications on a
+                rolling basis. If you do not receive an email within <strong> three weeks</strong>,
                 please follow up at{" "}
                 <a href={`mailto:${boardEmail}`} className={underlineLink}>
                   {boardEmail}
@@ -83,12 +82,18 @@ const Funding: React.FC = () => {
                 complete and submit the mandatory Post-Travel Form{" "}
                 <strong>within two (2) weeks of travel</strong> and upload your{" "}
                 <strong>itemized receipts</strong> and <strong>proof of payment</strong> for all
-                expenses you wish to be reimbursed. Requests received after this deadline will not be processed, 
-                and the award will be forfeited. Reimbursements are processed only after travel
-                has occurred and documentation is submitted.
+                expenses you wish to be reimbursed. Requests received after this deadline will not
+                be processed, and the award will be forfeited. Reimbursements are processed only
+                after travel has occurred and documentation is submitted.
               </li>
             </ol>
           </div>
+          <strong>Please note:</strong> Although applications are reviewed on a rolling basis, we do
+          not screen applicants during the summer.{" "}
+          <strong>
+            Applicants who are thinking of traveling over the summer should apply before the end of
+            the Academic Year in order to be processed.
+          </strong>
         </section>
 
         <section className="mb-8">
@@ -206,8 +211,8 @@ const Funding: React.FC = () => {
                   </strong>
                 </li>
                 <li>
-                  We only support domestic travel in the United States at this time and cannot 
-                  fund travel to other countries.
+                  We only support domestic travel in the United States at this time and cannot fund
+                  travel to other countries.
                 </li>
               </ul>
             </div>
