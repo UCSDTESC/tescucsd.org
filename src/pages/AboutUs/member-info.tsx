@@ -37,18 +37,10 @@ export const pvpData: string[][] = [
   [
     "Timothy Bang",
     "VP Finance",
-    "",
+    "Economics",
     "/member-pictures/Timothy-Bang.jpg",
     "",
     "timothyb@tescatucsd.org",
-  ],
-  [
-    "Jade",
-    "Prodev Lead",
-    "Bioengineering",
-    "/member-pictures/Profile_avatar_placeholder_large.png",
-    "",
-    "",
   ],
 ];
 
@@ -68,6 +60,7 @@ export const committeeLeadsData: string[][] = [
     "/member-pictures/Kevin-Nava.jpg",
     "",
     "kevinnava@tesc.ucsd.edu",
+    "center 5%",
   ],
   [
     "Hieu Nguyen",
@@ -94,12 +87,12 @@ export const committeeLeadsData: string[][] = [
     "elizabeth@tesc.ucsd.edu",
   ],
   [
-    "Aditya Sivanandan",
-    "ProDev Lead",
-    "Mechanical Engineering",
-    "/member-pictures/Aditya-Sivanandan.jpg",
+    "Jade",
+    "Prodev Lead",
+    "Bioengineering",
+    "/member-pictures/Profile_avatar_placeholder_large.png",
     "",
-    "aditya@tesc.ucsd.edu",
+    "",
   ],
   [
     "Alexis Gonzalez",
@@ -246,20 +239,20 @@ export const sponsorship: string[][] = [
 ];
 export const prodev: string[][] = [
   [
+    "Jade",
+    "Prodev Lead",
+    "Bioengineering",
+    "/member-pictures/Profile_avatar_placeholder_large.png",
+    "",
+    "",
+  ],
+  [
     "Kai Velasco",
     "ProDev",
     "Structural Engineering",
     "/member-pictures/Kai-Velasco.jpg",
     "",
     "kai@tesc.ucsd.edu",
-  ],
-  [
-    "Jade",
-    "ProDev",
-    "",
-    "/member-pictures/Profile_avatar_placeholder_large.png",
-    "",
-    "jade@tesc.ucsd.edu",
   ],
   [
     "Jonathan",
