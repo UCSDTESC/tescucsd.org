@@ -1,11 +1,13 @@
 import useImagePreloader from "../../Hooks/useImagePreload.tsx";
-import { upcomingEvents, pastEvents } from "./EventsList.ts";
+import { useSplitEvents } from "./EventsList";
 import { lazy, Suspense } from "react";
 
 const EventsGrid = lazy(() => import("./EventsGrid.tsx"));
 
 const Events = () => {
-  const imagePreloader = useImagePreloader(["AllPages/events-lead.webp"]);
+  const { upcomingEvents, pastEvents } = useSplitEvents();
+  const imagePreloader = useImagePreloader(["/AllPages/events-lead.webp"]);
+  console.log(upcomingEvents)
   return (
     <>
       <div className="m-12 mt-20 flex flex-row justify-between items-center max-w-[80%] mx-auto">
@@ -22,7 +24,7 @@ const Events = () => {
         </div>
         {imagePreloader.imagesPreloaded && (
           <img
-            src="AllPages/events-lead.webp"
+            src="/AllPages/events-lead.webp"
             alt="lead"
             className="hidden md:block w-80 h-auto animate-[animate-in_1s]"
           />
