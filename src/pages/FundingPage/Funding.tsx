@@ -5,7 +5,7 @@ const Funding: React.FC = () => {
   const businessTravelFormLink =
     "https://blink.ucsd.edu/_files/travel-tab/Student%20Certification%20for%20Business%2005.pdf";
   const deanFinOpsEmail = "jsoe-dean-finops-g@ucsd.edu";
-  const boardEmail = "contact@tescatucasd.org";
+  const boardEmail = "board@tescatucasd.org";
 
   const eceTravelFundLink =
     "https://www.ece.ucsd.edu/undergraduate/undergraduate-student-life/travel-fund";
@@ -65,8 +65,9 @@ const Funding: React.FC = () => {
               </li>
               <li>
                 <strong>Application Review (3-4 weeks):</strong> TESC reviews applications on a
-                rolling basis. If you do not receive an email within <strong> three weeks</strong>,
-                please follow up at{" "}
+                rolling basis. However, please leave at least 4 weeks for the review process as we
+                cannot guarantee a response for travel happening earlier than that. If you do not
+                receive an email within <strong> three weeks</strong>, please follow up at{" "}
                 <a href={`mailto:${boardEmail}`} className={underlineLink}>
                   {boardEmail}
                 </a>{" "}
@@ -92,7 +93,7 @@ const Funding: React.FC = () => {
           not screen applicants during the summer.{" "}
           <strong>
             Applicants who are thinking of traveling over the summer should apply before the end of
-            the Academic Year in order to be processed.
+            the previous academic year in order to be processed.
           </strong>
         </section>
 
